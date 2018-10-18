@@ -34,6 +34,22 @@ implements ObjectInput, ObjectStreamConstants
 ObjectInputStream()
 ObjectInputStream(InputStream in)
 ```
+3. FilterInputStream
+```
+public class FilterInputStream
+extends InputStream
+```
+```
+FilterInputStream(InputStream in)
+```
+4. BufferedInputStream
+```
+public class BufferedInputStream
+extends FilterInputStream
+```
+```
+BufferedInputStream(InputStream in)
+```
 ## OutputStream
 This abstract class is the superclass of all classes representing an output stream of _**bytes**_.
 ```
