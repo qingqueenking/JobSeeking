@@ -20,11 +20,19 @@ implements Closeable
 public class FileInputStream
 extends InputStream
 ```
+```
+FileInputStream(File file)
+FileInputStream(String name)
+```
 2. ObjectInputStream
 ```
 public class ObjectInputStream
 extends InputStream
 implements ObjectInput, ObjectStreamConstants
+```
+```
+ObjectInputStream()
+ObjectInputStream(InputStream in)
 ```
 ## OutputStream
 This abstract class is the superclass of all classes representing an output stream of _**bytes**_.
@@ -38,11 +46,19 @@ implements Closeable, Flushable
 public class FileOutputStream
 extends OutputStream
 ```
+```
+FileOutputStream(File file)
+FileOutputStream(OutputStream out)
+```
 2. ObjectOutputStream
 ```
 public class ObjectOutputStream
 extends OutputStream
 implements ObjectOutput, ObjectStreamConstants
+```
+```
+ObjectOutputStream()
+ObjectOutputStream(OutputStream out)
 ```
 ## Reader
 Abstract class for reading _**character**_ streams.
