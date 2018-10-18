@@ -1,8 +1,8 @@
 ## File
 An abstract representation of file and directory pathnames.
 ```
-public class File <br>
-extends Object <br>
+public class File
+extends Object
 implements Serializable, Comparable<File>
 ```
 ```
