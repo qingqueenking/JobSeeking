@@ -1,4 +1,8 @@
 # Java开发
+* 一定要做一个爱看文档的孩子
+https://docs.oracle.com/javase/8/docs/api/
+* 一定要做一个爱看源码的孩子
+IDE --> Double Shift --> Search
 # 校招必备知识和参考用书
 * 操作系统
 * 数据库
