@@ -1,3 +1,4 @@
+# java.io
 ## File
 An abstract representation of file and directory pathnames.
 ```
@@ -128,13 +129,21 @@ PrintWriter(OutputStream out)
 ## Java编码
 Java使用Unicode编码，这不是说Java不支持其他编码方式，而是说char类型使用Unicode编码。
 char类型占两个字节，Unicode中文和英文都占两个字节，这意味着一个char既可以装一个中文也可以装一个英文。
-## 字符和字节的互换
+## Character & Bytes
 ```
 String(byte[] bytes)
 String(byte[] bytes, Charset charset)
 void byte[] getBytes()
 void byte[] getBytes(Charset charset)
 ```
-# Java中的序列化和反序列化
-1. 序列化
-2. 反序列化
+## Serialization & Deserialization
+1. Serialization
+2. Deserialization
+# java.nio
+The central abstractions of the NIO APIs are:
+* Buffers, which are containers for data;
+* Charsets and their associated decoders and encoders, which translate between bytes and Unicode characters;
+* Channels of various types, which represent connections to entities capable of performing I/O operations;
+* Selectors and selection keys, which together with selectable channels define a multiplexed, non-blocking I/O facility.
+## Non-Bloked I/O (NIO)
+## Asynchronoud I/O (AIO)
