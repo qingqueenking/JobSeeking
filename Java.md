@@ -1,4 +1,4 @@
-# JRE和JDK
+## JRE和JDK
 * JRE (Java Runtime Environment): Java程序设计语言 + Java虚拟机 + Java API类库
 * JDK (Java Development Kit): Java API类库中的子集Java SE API子集 + Java虚拟机
 # Java虚拟机运行时数据区域
