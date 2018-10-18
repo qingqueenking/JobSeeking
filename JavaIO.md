@@ -1,4 +1,4 @@
-# *java.io*
+# * *java.io*
 ## File
 An abstract representation of file and directory pathnames.
 ```
@@ -139,7 +139,7 @@ void byte[] getBytes(Charset charset)
 ## Serialization & Deserialization
 1. Serialization
 2. Deserialization
-# *java.nio*
+# * *java.nio*
 The central abstractions of the NIO APIs are:
 * Buffers, which are containers for data;
 * Charsets and their associated decoders and encoders, which translate between bytes and Unicode characters;
@@ -162,7 +162,7 @@ public abstract class Buffer
 extends Object
 ```
 ## Asynchronoud I/O (AIO)
-# *Socket*
+# * *Socket*
 ## TCP (java.io.ServerSocket & java.io.Socket)
 ## UDP (java.io.DatagramSocket & java.io.DatagramPacket)
 ## java.nio.Buffer & java.nio.Selector & java.nio.Channel
