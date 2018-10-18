@@ -1,6 +1,6 @@
 ## JRE和JDK
 * JRE (Java Runtime Environment): Java程序设计语言 + Java虚拟机 + Java API类库
-* JDK (Java Development Kit): Java API类库中的子集Java SE API子集 + Java虚拟机
+* JDK (Java Development Kit): Java API类库中的Java SE (Standard Edition) API子集 + Java虚拟机
 ## Java虚拟机运行时数据区域
 1.程序计数器(线程私有)
   当前线程所执行的字节码的行号指示器
@@ -13,6 +13,10 @@
   存放对象实例和数组
 5.方法区(线程共享)
   存储已被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据
+## 垃圾收集(Garbage Collection, GC)
+1. 哪些内存需要回收
+2. 什么时候回收
+3. 如何回收
 ## Java内存管理
 ## Java垃圾回收
 ## Java的四个基本特性(抽象、封装、继承、多态)
