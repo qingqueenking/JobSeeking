@@ -146,4 +146,10 @@ The central abstractions of the NIO APIs are:
 * Channels of various types, which represent connections to entities capable of performing I/O operations;
 * Selectors and selection keys, which together with selectable channels define a multiplexed, non-blocking I/O facility.
 ## Non-Bloked I/O (NIO)
+1. Buffer
+A container for data of a specific primitive type.
+```
+public abstract class Buffer
+extends Object
+```
 ## Asynchronoud I/O (AIO)
