@@ -6,7 +6,7 @@
   * Redis设计与实现
 * 计算机网络
 * 设计模式
-  * Head Fisrt 设计模式
+  * Head First 设计模式
 * 数据结构和算法
   * 剑指offer
 * Java
