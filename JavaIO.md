@@ -139,12 +139,20 @@ void byte[] getBytes(Charset charset)
 ## Serialization & Deserialization
 1. Serialization
 2. Deserialization
+## TCP (java.io.ServerSocket & java.io.Socket)
+## UDP (java.io.DatagramSocket & java.io.DatagramPacket)
 # *II. java.nio*
 The central abstractions of the NIO APIs are:
 * Buffers, which are containers for data;
 * Charsets and their associated decoders and encoders, which translate between bytes and Unicode characters;
 * Channels of various types, which represent connections to entities capable of performing I/O operations;
 * Selectors and selection keys, which together with selectable channels define a multiplexed, non-blocking I/O facility.
+1. Buffer <br>
+A container for data of a specific non-boolean primitive type.
+```
+public abstract class Buffer
+extends Object
+```
 ## Synchronization, Asynchronization, Blocking, Nonblocking
 1. Synchronization <br>
 烧开水 + 静等/轮询查看
@@ -154,15 +162,5 @@ The central abstractions of the NIO APIs are:
 烧开水 + 旁边静等（“挂起”）
 4. Nonblocking <br>
 烧开水 + 打游戏去
-## Non-Bloked I/O (NIO)
-1. Buffer <br>
-A container for data of a specific non-boolean primitive type.
-```
-public abstract class Buffer
-extends Object
-```
-## Asynchronoud I/O (AIO)
-# *III. Socket*
-## TCP (java.io.ServerSocket & java.io.Socket)
-## UDP (java.io.DatagramSocket & java.io.DatagramPacket)
-## java.nio.Buffer & java.nio.Selector & java.nio.Channel
+## java.nio.ServerSocketChannel & java.nio.SocketChannel
+## java.nio.AsynchronousServerSocketChannel & java.nio.AsynchronousSocketChannel
