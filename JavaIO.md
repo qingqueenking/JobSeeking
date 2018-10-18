@@ -1,15 +1,3 @@
-## Java I/O Design Pattern
-装饰器模式，以InputStream为例，InputStream为抽象组件，FileInputStream是InputStream的子类，属于具体组件，装饰者用于装饰组件。
-## Java编码
-Java使用Unicode编码，这不是说Java不支持其他编码方式，而是说char类型使用Unicode编码。
-char类型占两个字节，Unicode中文和英文都占两个字节，这意味着一个char既可以装一个中文也可以装一个英文。
-## 字符和字节的互换
-```
-String(byte[] bytes)
-String(byte[] bytes, Charset charset)
-void byte[] getBytes()
-void byte[] getBytes(Charset charset)
-```
 ## File
 An abstract representation of file and directory pathnames.
 ```
@@ -135,3 +123,18 @@ extends Writer
 ```
 PrintWriter(OutputStream out)
 ```
+## Java I/O Design Pattern
+装饰器模式，以InputStream为例，InputStream为抽象组件，FileInputStream是InputStream的子类，属于具体组件，装饰者用于装饰组件。
+## Java编码
+Java使用Unicode编码，这不是说Java不支持其他编码方式，而是说char类型使用Unicode编码。
+char类型占两个字节，Unicode中文和英文都占两个字节，这意味着一个char既可以装一个中文也可以装一个英文。
+## 字符和字节的互换
+```
+String(byte[] bytes)
+String(byte[] bytes, Charset charset)
+void byte[] getBytes()
+void byte[] getBytes(Charset charset)
+```
+# Java中的序列化和反序列化
+1. 序列化
+2. 反序列化
