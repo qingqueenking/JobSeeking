@@ -145,9 +145,14 @@ The central abstractions of the NIO APIs are:
 * Charsets and their associated decoders and encoders, which translate between bytes and Unicode characters;
 * Channels of various types, which represent connections to entities capable of performing I/O operations;
 * Selectors and selection keys, which together with selectable channels define a multiplexed, non-blocking I/O facility.
+## Synchronization, Asynchronization, Blocking, Nonblocking
+1. Synchronization
+2. Asynchronization
+3. Blocking
+4. Nonblocking
 ## Non-Bloked I/O (NIO)
-1. Buffer
-A container for data of a specific primitive type.
+1. Buffer <br>
+A container for data of a specific non-boolean primitive type.
 ```
 public abstract class Buffer
 extends Object
