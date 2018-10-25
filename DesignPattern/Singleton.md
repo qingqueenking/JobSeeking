@@ -11,7 +11,7 @@ class Singleton {
 }
 ```
 ## Static block initialization
-Static block initialization is similar to eager initialization, expect that the instance of class is crated in the static block that provides option for exception handling.
+Static block initialization is similar to eager initialization, expect that the instance of class is crated in the static block that provides option for exception handling. <br>
 Both eager initialization and static block initialization creates the instance even before it's being used and that is not the best practice to use.
 ```
 class Singleton {
@@ -79,7 +79,7 @@ class Singleton {
 }
 ```
 ## Inner static class
-When the singleton class is loaded, InstanceHolder class is not loaded into memory and only when someone calls the getInstance method, the class get loaded and creates the Singleton class instance.
+When the singleton class is loaded, InstanceHolder class is not loaded into memory and only when someone calls the getInstance method, the class get loaded and creates the Singleton class instance. <br>
 This is the most widely used approach for Singleton class as it doesn't require synchronization.
 ```
 class Singleton {
@@ -93,7 +93,7 @@ class Singleton {
   }
 }
 ```
-## Using Reflection to destroy Singleton Pattern
+## Using reflection to destroy singleton pattern
 Reflection can be used to destroy all the above implementation approaches.
 ```
 class ReflectionSingletonTest {
@@ -115,7 +115,7 @@ class ReflectionSingletonTest {
   }
 }
 ```
-## enum
+## Enum
 ```
 enum Singleton {
   uniqueInstance;
