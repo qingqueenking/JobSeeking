@@ -5,6 +5,8 @@ https://docs.oracle.com/javase/tutorial/java/
 https://docs.oracle.com/javase/8/docs/api/
 * Source Code <br>
 IntelliJ IDEA --> Double Shift --> Search
+* Markdown Guides <br>
+https://guides.github.com/features/mastering-markdown/
 ## 校招必备知识和参考用书
 * 操作系统
 * 数据库
