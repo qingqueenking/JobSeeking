@@ -9,16 +9,16 @@
   The Java Programming language is statically-typed, which means that all variables must first be declared before they can be used. <br>
 
   Data Type | Bits | Value Range | Default Value
-  :----- | :-----: | :-----: | :-----:
-  byte | 8 bits | 1 | 0
-  short | 16 bits | 2 | 0
-  int | 32 bits | 3 | 0
-  long |  64 bits | 4 | 0L
-  float | 32 bits | 5 | 0.0f
-  double | 32 bits | 6 | 0.0d
-  char | 16 bits | 7 | 1
-  boolean | 1 bits | 8 | 0
-  
+  :- | :-: | :-: | :-:
+  byte | 8 bits | -128 ~ 127 | 0
+  short | 16 bits | -32,768 ~ 32,767 | 0
+  int | 32 bits | -2^31 ~ 2^31 - 1 | 0
+  long |  64 bits | -2^63 ~ 2^63 - 1 | 0L
+  float | 32 bits | - | 0.0f
+  double | 32 bits | - | 0.0d
+  char | 16 bits | '\u0000' (or 0) ~ '\uffff' (or 65, 535) | '\u0000'
+  boolean | not precisely defined | true/false | false
+
   * Literals
     the source code representation of fixed values
   * Integer Literals
