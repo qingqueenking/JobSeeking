@@ -6,7 +6,7 @@
   * If the name consists of only one word, spell that word in all lowercase letters. If it consists of more than one word, capitalize the first letter of each subsequent word.
   * If your variable stores a constant value, the convention changes slightly, capitalizing every letter and separating subsequent words with the underscore character. By convention, the underscore character is never used elsewhere.
 * Primitive Data Types
-  The Java Programming language is statically-typed, which means that all variables must first be declared before they can be used.
+  The Java Programming language is statically-typed, which means that all variables must first be declared before they can be used. <br>
   Data Type | Bits | Value Range | Default Value
   :- | :-: | :-: | :-:
   byte | 8 bits | 1 | 0
