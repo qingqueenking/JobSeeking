@@ -1,7 +1,7 @@
 ## Variables
 * Naming
   * Variable names are case-sensitive.
-  * A variable's name can be any legal identifier - an unlimited-length sequence of Unicode letters and digits, beginning with a letter, the dollar sign, or the underscore character. The convention, however, is not to use the dollar sign at all.
+  * A variable's name can be any legal identifier - an unlimited-length sequence of Unicode letters and digits, beginning with a letter, the dollar sign "$", or the underscore character "\_". The convention, however, is to always begin your variable names with a letter, not "$" or "\_".
   * Subsequent characters may be letters, digits, dollar signs, or underscore characters.
   * If the name consists of only one word, spell that word in all lowercase letters. If it consists of more than one word, capitalize the first letter of each subsequent word.
   * If your variable stores a constant value, the convention changes slightly, capitalizing every letter and separating subsequent words with the underscore character. By convention, the underscore character is never used elsewhere.
@@ -15,7 +15,7 @@
   int | 32 bits | -2^31 ~ 2^31 - 1 | 0
   long |  64 bits | -2^63 ~ 2^63 - 1 | 0L
   float | 32 bits | - | 0.0f
-  double | 32 bits | - | 0.0d
+  double | 64 bits | - | 0.0d
   char | 16 bits | '\u0000' (or 0) ~ '\uffff' (or 65, 535) | '\u0000'
   boolean | not precisely defined | true/false | false
 
@@ -96,7 +96,7 @@ class OuterClass {
 As with class methods and variables, a static nested class is associated with its outer class. And like class methods, a static nested class cannot refer directly to instance variables or methods defined in its enclosing class: it can use them only through an object reference.
 * Inner Classes
 As with instance methods and variables, an inner class is associated with an instance of its enclosing class and has direct access to that object's methods and fields. Also, because an inner class is associated with an instance, it cannot define any static members itself. To instantiate an inner class, you must first instantiate the outer class.
-  * Local classes: An inner class within the body of a method.
+  * Local classes: Classes that are defined in a block, which is a group of zero or more statements between balanced braces.
   * Anonymous classes: An inner class within the body of a method without naming the class.
     * The new operator
     * The name of an interface to implement or a class to extend
