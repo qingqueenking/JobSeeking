@@ -1,6 +1,6 @@
 ## Variables
-* Naming
-  * Variable names are case-sensitive.
+1. Naming
+  1. Variable names are case-sensitive.
   * A variable's name can be any legal identifier - an unlimited-length sequence of Unicode letters and digits, beginning with a letter, the dollar sign, or the underscore character. The convention, however, is not to use the dollar sign at all.
   * Subsequent characters may be letters, digits, dollar signs, or underscore characters.
   * If the name consists of only one word, spell that word in all lowercase letters. If it consists of more than one word, capitalize the first letter of each subsequent word.
