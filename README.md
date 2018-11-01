@@ -1,5 +1,5 @@
 # Software Engineer - Java
-* The Java Tutorials
+* The Java Tutorials <br>
 https://docs.oracle.com/javase/tutorial/java/
 * Java API <br>
 https://docs.oracle.com/javase/8/docs/api/
