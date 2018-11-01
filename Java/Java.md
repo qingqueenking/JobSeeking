@@ -1,73 +1,112 @@
-## JRE和JDK
-* JRE (Java Runtime Environment): Java程序设计语言 + Java虚拟机 + Java API类库
-* JDK (Java Development Kit): Java API类库中的Java SE (Standard Edition) API子集 + Java虚拟机
-## Java虚拟机运行时数据区域
-1. 程序计数器 (线程私有) <br>
-当前线程所执行的字节码的行号指示器
-2. Java虚拟机栈 (线程私有) <br>
-存储局部变量表、操作数栈、动态链接、方法出口等信息 <br>
-局部变量表存放了编译器克制的各种基本数据类型、对象引用和returnAddress类型
-3. 本地方法栈 (线程私有) <br>
-为Native方法服务
-4. Java堆 (线程共享) <br>
-存放对象实例和数组
-5. 方法区 (线程共享) <br>
-存储已被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码等数据
-## 垃圾收集(Garbage Collection, GC)
-1. 哪些内存需要回收 <br>
-Java堆和方法区
-原因：程序计数器、虚拟机栈、本地方法栈三个区域随线程而生，随线程而灭；栈中的栈帧随着方法的进入和退出执行入栈和出栈操作，每一个栈帧中分配多少内存基本上在类结构确定下来时就已知，因此这三个区域的内存分配和回收都具备确定性。而Java堆和方法区中的内存分配和回收都是动态的。
-2. 什么时候回收
-3. 如何回收
-4. 回收哪些对象
-  * 引用计数算法
-  * 可达性分析算法
-## Java内存管理
-## Java垃圾回收
-## Java的四个基本特性(抽象、封装、继承、多态)
-## Java和C++的区别
-## 内存泄漏和内存溢出
-1. 内存泄漏 (Memory Leak)
-2. 内存溢出 (Memory Overflow)
-3. Out of Memory
-## 引用
-1. 强引用 (Strong Reference) <br>
-强引用是指程序代码中普遍存在的，类似"Object obj = new Object()"这类的引用 <br>
-只要强引用还在，垃圾收集器永远不会回收掉被引用对象。
-2. 软引用 (Soft Reference) <br>
-使用SoftReference类来实现 <br>
-当内存空间还足够时，能保留在内存之中；在系统将要发生内存溢出异常之前，将会把这些对象列进回收范围之中进行第二次回收，如果这次回收还没有足够内存，才会抛出内存溢出异常。
-3. 弱引用 (Weak Reference) <br>
-使用WeakReference类来实现 <br>
-当垃圾收集器工作时，无论当前内存是否足够，都会回收掉只被弱引用关联的对象。
-4. 虚引用 (Phantom Reference) <br>
-使用PhantomReference类来实现 <br>
-一个对象是否有虚引用的存在，完全不会对其生存时间构成影响，也无法通过虚引用来取得一个对象实例。为一个对象设置虚引用关联的唯一目的就是能在这个对象被垃圾回收器回收时收到一个系统通知。
-## Overload和Override的区别
-## 访问修饰符
-## 基本数据类型和包装类
-## 自动拆装箱
-## 抽象类和接口的区别
-## 常用的Java包
-## String、StringBuilder、StringBuffer
-## Object类
-## Java的集合类
-## HashMap的底层实现
-## HashMap、Hashtable、ConcurrentHashMap
-## ArrayList、LinkedList
-## 异常
-## 多线程的实现方式
-## 线程状态转换
-## 线程安全
-## 线程池
-## volatile
-## Synchronized和Lock的区别
-## 死锁
-## BIO、NIO、AIO
-## 序列化
-## 反射
-## Java类加载器
-## JDBC
-## Socket
-## The Garbage Collector
-An object is eligible for garbage collection when there are no more references to that object.
+## Variables
+* Naming
+  * Variable names are case-sensitive.
+  * A variable's name can be any legal identifier - an unlimited-length sequence of Unicode letters and digits, beginning with a letter, the dollar sign "$", or the underscore character "\_". The convention, however, is to always begin your variable names with a letter, not "$" or "\_".
+  * Subsequent characters may be letters, digits, dollar signs, or underscore characters.
+  * If the name consists of only one word, spell that word in all lowercase letters. If it consists of more than one word, capitalize the first letter of each subsequent word.
+  * If your variable stores a constant value, the convention changes slightly, capitalizing every letter and separating subsequent words with the underscore character. By convention, the underscore character is never used elsewhere.
+* Primitive Data Types
+  The Java Programming language is statically-typed, which means that all variables must first be declared before they can be used. <br>
+
+  Data Type | Bits | Value Range | Default Value
+  :- | :-: | :-: | :-:
+  byte | 8 bits | -128 ~ 127 | 0
+  short | 16 bits | -32,768 ~ 32,767 | 0
+  int | 32 bits | -2^31 ~ 2^31 - 1 | 0
+  long |  64 bits | -2^63 ~ 2^63 - 1 | 0L
+  float | 32 bits | - | 0.0f
+  double | 64 bits | - | 0.0d
+  char | 16 bits | '\u0000' (or 0) ~ '\uffff' (or 65, 535) | '\u0000'
+  boolean | not precisely defined | true/false | false
+
+  * Literals
+    the source code representation of fixed values
+  * Integer Literals
+    An integer literal is of type long if it ends with the letter L or l; otherwise it is of type int. It is recommended that you use the upper case letter L because lowercase letter l is hard to distinguish from the digit 1. <br>
+    The prefix 0x indicates hexadecimal and 0b indicates binary.
+  * Floating-Point Literals
+    A floating-point literal is of type float if it ends with the letter F or f; otherwise its type is double and it can optionally end with letter D or d.
+* Kinds
+  * Fields: Member variables in a class
+    * Instance Variables (Non-Static Fields)
+    * Class Variables (Static Fields)
+  * Local Variables: variables in a method or block of code
+  * Parameters: variables in method declarations
+## Operators
+* The Type Comparison Operator instanceof
+  The instanceof operator compares an object to a specified type. You can use it to test if an object is an instance of a class, an instance of a subclass, or an instance of a class that implements a particular interface. <br>
+  When using the instanceof operator, keep in mind that null is not an instance of anything.
+* Bitwise and Bit Shift Operators
+  << Signed left shift <br>
+  \>\> Signed right shift <br>
+  \>\>\> Unsigned right shift
+## Classes
+* Modifiers.
+* The class name, with the initial letter capitalized by convention.
+* The name of the class's parent, if any, preceded by the keyword extends. A class can only extend one parent.
+* A comma-separated list of interfaces implemented by the class, if any, preceded by the keyword implements. A class can implement more than one interface.
+* The class body, surrounded by braces, {}.
+## Methods
+* Modifiers.
+* The return type.
+* The first word in a method name should be a verb.
+* The Parameter list in parenthesis - a comma-delimited list of input parameters proceeded by data types.
+* An exception list.
+* The method body, enclosed between braces.
+## Access Modifiers
+Modifier | Class | Package | Subclass | World
+:- | :-: | :-: | :-: | :-:
+public | Y | Y | Y | Y
+protected | Y | Y | Y | N
+default | Y | Y | N | N
+private | Y | N | N | N
+## Overloading methods
+Methods within a class can have the same name if they have different parameter lists. <br>
+The compiler does not consider return type when differentiating methods, so you cannot declare two methods with the same signature even if they have a different return type.
+## Primitive Data Type vs. Reference Data Type
+* Primitive arguments are passed into methods by value. This means that any changes to the values of the parameters exist only within the scope of the method. When the method returns, the parameters are gone and any changes to them are lost.
+* Reference data type parameters are also passed into methods by value. This means that when the method returns, the passed-in reference still references the same object as before. However, the values of the object's fields can be changed in the method.
+## Using the this keyword
+Within an instance method or a constructor, this is a reference to the current object.
+## Class Variables and Methods
+```
+ClassName.variableName
+ClassName.methodName(args)
+```
+You can also refer to static variables and methods with an object reference, but this is discouraged because it does not make it clear that they are class variables or methods.
+Not all combinations of instance and class variables and methods are allowed:
+* Instance methods can access instance variables and instance methods directly.
+* Instance methods can access class variables and class methods directly.
+* Class methods can access class variables and class methods directly.
+* Class methods cannot access instance variables or instance methods directly — they must use an object reference. Also, class methods cannot use the this keyword as there is no instance for this to refer to.
+## Nested Classes
+Nested classes are divided into two categories: static and non-static. Nested classes that are declared static are called static nested classes. Non-static nested classes are called inner classes.
+```
+class OuterClass {
+  ...
+  static class StaticNestedClass {
+    ...
+  }
+  class InnerClass {
+    ...
+  }
+}
+```
+* Static Nested Classes
+As with class methods and variables, a static nested class is associated with its outer class. And like class methods, a static nested class cannot refer directly to instance variables or methods defined in its enclosing class: it can use them only through an object reference.
+* Inner Classes
+As with instance methods and variables, an inner class is associated with an instance of its enclosing class and has direct access to that object's methods and fields. Also, because an inner class is associated with an instance, it cannot define any static members itself. To instantiate an inner class, you must first instantiate the outer class.
+  * Local classes: Classes that are defined in a block, which is a group of zero or more statements between balanced braces.
+  * Anonymous classes: An inner class within the body of a method without naming the class.
+    * The new operator
+    * The name of an interface to implement or a class to extend
+    * Parentheses that contain the arguments to a constructor
+    * A body, which is a class declaration body
+## Lambda Expressions
+## When to Use Nested Classes, Local Classes, Anonymous Classes, and Lambda Expressions
+* Local class: Use it if you need to create more than one instance of a class, access its constructor, or introduce a new, named type.
+* Anonymous class: Use it if you need to declare fields or additional methods.
+* Lambda expression: Use it if you are encapsulating a single unit of behavior that you want to pass to other code; Use it if you need a simple instance of a functional interface and none of the preceding criteria apply.
+* Nested class: Use it if your requirements are similar to those of a local class, you want to make the type more widely available, and you don't require access to local variables or method parameters.
+## Enum Types
+An enum type is a special data type that enables for a variable to be a set of predefined constants.
