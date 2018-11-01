@@ -8,7 +8,7 @@
   * Head First 设计模式
 * 数据结构和算法
   * 剑指offer
-* [Java](https://github.com/qingqueenking/JobSeeking/blob/master/Java/Java.md)
+* [Java](https://github.com/qingqueenking/JobSeeking/blob/master/Java/JavaLanguage.md)
   * Java程序员面试宝典
   * 深入理解Java虚拟机
   * Java并发编程实战
