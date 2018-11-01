@@ -15,8 +15,8 @@
   long |  64 bits | 4 | 0L
   float | 32 bits | 5 | 0.0f
   double | 32 bits | 6 | 0.0d
-  char | 16 bits | 7 | '\u0000'
-  boolean | not precisely defined | true/false | false
+  char | 16 bits | 7 | 1
+  boolean | 1 bits | 8 | 0
   * Literals
     the source code representation of fixed values
   * Integer Literals
