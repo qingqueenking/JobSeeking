@@ -8,7 +8,7 @@
 * Primitive Data Types
   The Java Programming language is statically-typed, which means that all variables must first be declared before they can be used. <br>
   Data Type | Bits | Value Range | Default Value
-  :- | :-: | :-: | :-:
+  :----- | :-----: | :-----: | :-----:
   byte | 8 bits | 1 | 0
   short | 16 bits | 2 | 0
   int | 32 bits | 3 | 0
