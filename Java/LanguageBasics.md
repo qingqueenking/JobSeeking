@@ -7,6 +7,7 @@
   * If your variable stores a constant value, the convention changes slightly, capitalizing every letter and separating subsequent words with the underscore character. By convention, the underscore character is never used elsewhere.
 * Primitive Data Types
   The Java Programming language is statically-typed, which means that all variables must first be declared before they can be used. <br>
+
   Data Type | Bits | Value Range | Default Value
   :----- | :-----: | :-----: | :-----:
   byte | 8 bits | 1 | 0
@@ -17,6 +18,7 @@
   double | 32 bits | 6 | 0.0d
   char | 16 bits | 7 | 1
   boolean | 1 bits | 8 | 0
+  
   * Literals
     the source code representation of fixed values
   * Integer Literals
