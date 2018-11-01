@@ -69,3 +69,5 @@ Java堆和方法区
 ## Java类加载器
 ## JDBC
 ## Socket
+## The Garbage Collector
+An object is eligible for garbage collection when there are no more references to that object.
