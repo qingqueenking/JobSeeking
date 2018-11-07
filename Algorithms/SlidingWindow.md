@@ -1,4 +1,5 @@
-# Sliding Window Template
+# Sliding Window
+## Template
 ```
 int j = 0;
 for (int i = 0; i < n; i++) {
