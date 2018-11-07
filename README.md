@@ -18,3 +18,4 @@
   * [Java API](https://docs.oracle.com/javase/8/docs/api/)
   * Source Code: IntelliJ IDEA --> Double Shift --> Search
   * [Markdown Guides](https://guides.github.com/features/mastering-markdown/)
+  * [The Python Tutorial](https://docs.python.org/2/tutorial/index.html)
