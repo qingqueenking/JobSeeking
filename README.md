@@ -13,6 +13,8 @@
   * 深入理解Java虚拟机
   * Java并发编程实战
   * Spring实战
+* Algorithms
+  * [Sliding Window](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/SlidingWindow.md)
 * Reference
   * [The Java Tutorials](https://docs.oracle.com/javase/tutorial/java/)
   * [Java API](https://docs.oracle.com/javase/8/docs/api/)
