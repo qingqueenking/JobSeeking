@@ -222,6 +222,41 @@ class Solution {
     }
 }
 ```
+### [Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array/description/)
+```
+class Solution {
+    public int findKthLargest(int[] nums, int k) {
+        return quickSelect(nums, 0, nums.length - 1, k);
+    }
+    private int quickSelect(int[] nums, int start, int end, int k) {
+        int left = start;
+        int right = end;
+        int pivot = nums[left + (right - left) / 2];
+        while (left <= right) {
+            while (left <= right && nums[left] > pivot) {
+                left++;
+            }
+            while (left <= right && nums[right] < pivot) {
+                right--;
+            }
+            if (left <= right) {
+                int temp = nums[left];
+                nums[left] = nums[right];
+                nums[right] = temp;
+                left++;
+                right--;
+            }
+        }
+        if (start + k - 1 <= right) {
+            return quickSelect(nums, start, right, k);
+        } else if (start + k - 1 >= left) {
+            return quickSelect(nums, left, end, k - left + start);
+        } else {
+            return nums[right + 1];
+        }
+    }
+}
+```
 ## Slow and Fast Pointers
 ### [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/description/)
 ```
