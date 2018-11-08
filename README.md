@@ -14,7 +14,7 @@
   * Java并发编程实战
   * Spring实战
 * Algorithms
-  * [Sliding Window](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/SlidingWindow.md)
+  * [Two Pointers](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/TwoPointers.md)
 * Reference
   * [The Java Tutorials](https://docs.oracle.com/javase/tutorial/java/)
   * [Java API](https://docs.oracle.com/javase/8/docs/api/)
