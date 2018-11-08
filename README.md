@@ -15,7 +15,7 @@
   * Spring实战
 * Algorithms
   * [Two Pointers](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/TwoPointers.md)
-  * [UnionFind](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/UnionFind.md)
+  * [Union Find](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/UnionFind.md)
 * Reference
   * [The Java Tutorials](https://docs.oracle.com/javase/tutorial/java/)
   * [Java API](https://docs.oracle.com/javase/8/docs/api/)
