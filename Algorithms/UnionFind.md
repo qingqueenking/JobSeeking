@@ -63,6 +63,7 @@ class UnionFind {
         size = new int[n];
         for (int i = 0; i < n; i++) {
             father[i] = i;
+            size[i] = 1;
         }
     }
     public int find(int x) {
