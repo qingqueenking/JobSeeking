@@ -16,6 +16,7 @@
 * Algorithms
   * [Two Pointers](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/TwoPointers.md)
   * [Union Find](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/UnionFind.md)
+  * [Trie Tree](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/TrieTree.md)
 * Reference
   * [The Java Tutorials](https://docs.oracle.com/javase/tutorial/java/)
   * [Java API](https://docs.oracle.com/javase/8/docs/api/)
