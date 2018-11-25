@@ -14,6 +14,8 @@
   * Java并发编程实战
   * Spring实战
 * Algorithms
+  * [Dynamic Programming](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/DynamicProgramming.md)
+  * [Linked List](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/LinkedList.md)
   * [Two Pointers](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/TwoPointers.md)
   * [Union Find](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/UnionFind.md)
   * [Trie Tree](https://github.com/qingqueenking/JobSeeking/blob/master/Algorithms/TrieTree.md)
