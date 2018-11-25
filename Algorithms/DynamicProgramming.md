@@ -1,6 +1,6 @@
 # Dynamic Programming
-<font color=gray size=5>gray</font>
-## <font color=#8B0000> **Coordinate** ```dp[n]``` </font>
+
+## **Coordinate** ```dp[n]```
 ### Climbing Stairs
 ```
 dp[i] = dp[i - 1] + dp[i - 2];
